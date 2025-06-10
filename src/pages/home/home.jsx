@@ -1,10 +1,6 @@
 import React from 'react'
 import './home.css'
 import {useBrowser} from "../../context/browser_context"
-<<<<<<< HEAD
-=======
-import {type} from '@testing-library/user-event/dist/type';
->>>>>>> d4b1d1c16c01e4ab1e5068de63227ed50961fb97
 
 const Home = () => {
     const {name, BrowserDispatch}=useBrowser();
@@ -14,10 +10,7 @@ const Home = () => {
                 type: "NAME",
                 payload: event.target.value
             })
-<<<<<<< HEAD
             localStorage.setItem("name", event.target.value);
-=======
->>>>>>> d4b1d1c16c01e4ab1e5068de63227ed50961fb97
         }
 
     }

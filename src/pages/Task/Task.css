@@ -1,15 +1,98 @@
+.main_div{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    height: 100vh;
+}
 .time{
     color: white;
-    font-size: 50px;
-    text-align: center;
-
+    font-size: 100px;
+    margin-top: 30px;
+    margin-left: 30px;
 }
 .task{
     color: white;
     font-size: 50px;
-    text-align: center;
-    justify-content: center;
+    margin-left: 30px;
+}
+.links{
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.links a{
+    padding: 2px 10px;
+    margin: 5px;
+    color: white;
+    text-decoration: none;
+    border: white 1px solid;
+    border-radius: 3rem;
+    transition: ease-in-out 0.3s;
+}
+.links a:hover{
+    color: white;
+    background: black;
+    transform: scale(0.8);
+}
+.links a:active{
+    color: white;
+    background: black;
+    transform: scale(0.9);
+}
+.task_div{
     display: flex;
-
-
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    width: 100vw;
+}
+.question {
+    margin-top: 20px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+.input_form {
+    margin-top: 20px;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+.checkbox{
+    height: 1.3rem;
+    width: 1.3rem;
+    margin-right: 10px;
+}
+.checkbox task{
+    color: white;
+    font-size: 20px;
+}
+.task_div_checkbox{
+    font-size: 30px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.strike{
+    text-decoration: line-through;
+    color: white;
+}
+.button{
+    padding: 5px 5px;
+    background: transparent;
+    color: white;
+    border: none;
+    font-size: 20px;
+    font-weight: bolder;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+.checkbox_div{
+    display: flex;
+    align-items: center;
 }

@@ -5,14 +5,21 @@ export const BrowserReducer=(state, actions)=>{
                 ...state,
                 name:actions.payload
             }
-<<<<<<< HEAD
         case "TIME":
             return {
                 ...state,
                 time:actions.payload
             }
-=======
->>>>>>> d4b1d1c16c01e4ab1e5068de63227ed50961fb97
+        case "MESSAGE":
+            return {
+                ...state,
+                message:actions.payload>=0 && actions.payload<12 ? "Good Morning" : actions.payload>=12 && actions.payload<18 ? "Good Afternoon" : "Good Evening"
+            }
+        case "TASK":
+            return {
+                ...state,
+                task:actions.payload
+            }
         default :
             return state;
 
