@@ -11,14 +11,8 @@ export const quotes = [
       quote:
         "Those who are prepared to die for any cause are seldom defeated. - Pandit Jawarharlal Nehru"
     },
-    {
-      quote:
-        "Where the mind is led forward by thee into ever-widening thought and action-Into that heaven of freedom, my father, let my country awake. – Rabindranath Tagore"
-    },
-    {
-      quote:
-        "A war based on Satyagraha is always of two kinds. One is the war we wage against injustice and the other we fight against our own weaknesses. – Sardar Vallabhbhai Patel"
-    },
+
+
     {
       quote:
         "Revolution is an inalienable right of mankind. Freedom is an imperishable birthright of all. ― Bhagat Singh"
@@ -27,18 +21,12 @@ export const quotes = [
       quote:
         "Merciless criticism and independent thinking are the two necessary traits of revolutionary thinking. ― Bhagat Singh"
     },
-    {
-      quote:
-        "Don’t take rest after your first victory because if you fail in second, more lips are waiting to say that your first victory was just luck. - A. P. J. Abdul Kalam"
-    },
+
     {
       quote:
         "I believe in a religion that propagates freedom, equality and brotherhood. - Chandrasekhar Azad"
     },
-    {
-      quote:
-        "Don’t see others doing better than you, beat your own records every day because success is a fight between you and yourself. - Chandrasekhar Azad"
-    },
+
     {
       quote:
         "We want deeper sincerity of motive, a greater courage in speech and earnestness in action. - Sarojini Naidu"
@@ -47,10 +35,7 @@ export const quotes = [
       quote:
         "A country’s greatness lies in its undying ideals of love and sacrifice that inspire the mothers of the race. - Sarojini Naidu"
     },
-    {
-      quote:
-        "Life is all about a card game. Choosing the right cards is not in our hand. But playing well with the cards in hand determines our success. - Bal Gangadhar Tilak"
-    },
+
     {
       quote: "Life should be great rather than long. – B.R. Ambedkar"
     },

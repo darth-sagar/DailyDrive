@@ -20,3 +20,17 @@
     text-align: center;
     font-weight: bold;
 }
+.quote_div{
+    margin-top: 20px;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    width: 100vw;
+    position: absolute;
+    bottom: 30px;
+}
+.github_button{
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+}
