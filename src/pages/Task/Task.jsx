@@ -1,4 +1,5 @@
 import './Task.css'
+<<<<<<< HEAD
 import {useBrowser} from '../../context/browser_context';
 import React from 'react'
 import {useEffect} from 'react';
@@ -51,6 +52,14 @@ const Task = () => {
             <h1 className="task">Hello {name}</h1>
         </div>
 
+=======
+
+import React from 'react'
+
+const Task = () => {
+    return (
+        <div>Task</div>
+>>>>>>> d4b1d1c16c01e4ab1e5068de63227ed50961fb97
     )
 }
 export default Task
