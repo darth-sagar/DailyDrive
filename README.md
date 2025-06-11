@@ -67,6 +67,7 @@ npm run build
 ## Project Structure
 ```
 browser-extension/
+├── assets/  
 ├── public/             # Public assets
 ├── src/
 │   ├── Components/     # Reusable components
