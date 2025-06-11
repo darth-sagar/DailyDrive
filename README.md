@@ -1,4 +1,4 @@
-# Browser Extension - Personalized New Tab Page
+# DailyDrive - Personalized New Tab Page
 
 A React-based browser extension that transforms your new tab page into a personalized dashboard with a beautiful background, time display, daily focus task, todo list, and inspirational quotes.
 
