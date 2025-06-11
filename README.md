@@ -19,7 +19,7 @@ A React-based browser extension that transforms your new tab page into a persona
 
 
 ### Demo Video
-[Watch the demo video](assets/React%20App%20-%20Google%20Chrome%202025-06-12%2002-49-00.mp4)
+[Watch the demo video](assets/demo.mp4)
 
 ## Technologies Used
 - React.js
