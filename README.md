@@ -14,7 +14,9 @@ A React-based browser extension that transforms your new tab page into a persona
 
 ## Screenshots and Demo
 ### Screenshot
+![Browser Extension Screenshot](assets/{B082728A-91DE-4D0F-9B52-47909B7C7924}.png)
 ![Browser Extension Screenshot](assets/{D50DE537-4EEB-4F52-BB25-87F021DC1E9D}.png)
+
 
 ### Demo Video
 [Watch the demo video](assets/React%20App%20-%20Google%20Chrome%202025-06-12%2002-49-00.mp4)
@@ -85,9 +87,6 @@ browser-extension/
 
 ## Contributing
 Contributions are welcome! Please feel free to submit a Pull Request.
-
-## License
-This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Acknowledgements
 - [React](https://reactjs.org/)
