@@ -21,4 +21,9 @@
     width: 19rem;
     text-align: end;
     margin-right: 30px;
+    z-index: 1;
+    height:72vh;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
 }

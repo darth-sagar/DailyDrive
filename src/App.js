@@ -19,7 +19,6 @@ function App() {
   return (
     <div className="app" style={{backgroundImage:`url("${bgimage}")`}}>
         {name ? <Task/>: <Home/> }
-        {/*<Home/>*/}
     </div>
   );
 }

@@ -1,23 +1,38 @@
 import React, {useState} from 'react'
 import './Todolist.css'
 import { MdDeleteOutline } from "react-icons/md";
-const Todolist = ({todo, isCompleted, _id}) => {
+import {motion} from 'framer-motion';
 
-    const [isStrike, setisStrike]=useState(false)
-    const HandleStrike=()=>{
-        setisStrike(!isStrike)
+const Todolist = ({todo, isCompleted, _id, updateTodoStatus, deleteTodo}) => {
+
+    const [isStrike, setIsStrike]=useState(isCompleted)
+
+    const HandleStrike=(todoId)=>{
+        const newIsStrike = !isStrike
+        setIsStrike(newIsStrike)
+        updateTodoStatus(todoId, newIsStrike)
     }
-    const handleDelete=()=>{
-        console.log("delete");
+
+    const handleDelete=(ToDoId)=>{
+        deleteTodo(ToDoId)
     }
     return (
-        <div key={_id} className={"todolist_div"}>
+        <motion.div key={_id} className={"todolist_div"}
+                    initial={{opacity: 0}}
+                    animate={{opacity: 1}}
+                    transition={{duration: 1.5,ease:"easeInOut"}}
+        >
             <label className={`${isStrike?"strikethrough":""} input_text`}>
-                <input type={"checkbox"} className={"checkbox_input"} onClick={HandleStrike}/>
+                <input 
+                    type={"checkbox"} 
+                    className={"checkbox_input"} 
+                    checked={isStrike}
+                    onChange={()=>HandleStrike(_id)}
+                />
                 {todo}
             </label>
-            <button onClick={handleDelete} id={_id} className={"delete_button"}><MdDeleteOutline /></button>
-        </div>
+            <button onClick={()=>handleDelete(_id)} id={_id} className={"delete_button"}><MdDeleteOutline /></button>
+        </motion.div>
     )
 }
 export default Todolist

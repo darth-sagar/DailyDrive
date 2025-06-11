@@ -19,6 +19,10 @@ const Task = () => {
     const [ischeck, setischeck] = useState(false)
     const {time,message,task,name, BrowserDispatch} = useBrowser();
 
+    useEffect(() => {
+        document.title = `${name}'s Todo List`; // Dynamic title based on user's name
+    }, [name]);
+
     useEffect(()=>{
         const task=localStorage.getItem("task");
         BrowserDispatch({

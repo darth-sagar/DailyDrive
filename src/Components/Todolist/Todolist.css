@@ -24,7 +24,8 @@
 }
 .checkbox_input{
     margin-right: 10px;
-    font-size: 40px;
+    width: 1.1rem;
+    height: 1.1rem;
 }
 .strikethrough{
     text-decoration: line-through;
