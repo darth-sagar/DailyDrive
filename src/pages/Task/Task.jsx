@@ -5,12 +5,16 @@ import {useEffect} from 'react';
 import {quotes} from '../../db/quotes';
 import { FaGithub } from "react-icons/fa";
 import { motion } from 'framer-motion';
+import todo from '../../Components/Todo/Todo';
+import Todo from '../../Components/Todo/Todo';
+import {click} from '@testing-library/user-event/dist/click';
 
 const index = quotes[Math.floor(Math.random() * quotes.length)];
 const quote = index.quote;
 
 const Task = () => {
 
+    const [todo, settodo]=useState(false)
     const [ischeck, setischeck] = useState(false)
     const {time,message,task, BrowserDispatch} = useBrowser();
     const {name} = useBrowser();
@@ -72,6 +76,10 @@ const Task = () => {
         })
         localStorage.setItem("task", "");
         setischeck(ischeck=>false);
+    }
+
+    const handletodokey=()=>{
+        settodo(prev => !prev)
     }
     return (
         <div className={"main_div"}>
@@ -137,15 +145,24 @@ const Task = () => {
                 </motion.div>
             }
             <motion.div className={'quote_div'}
-                        initial={{ opacity: 0 , y:150}}
-                        animate={{opacity: 1 ,y:-10 }}
-                        transition={{ duration: 1, delay:4 , ease: "easeInOut"}}
+                        initial={{ opacity: 0 , y:-100}}
+                        animate={{opacity: 1 ,y:0 }}
+                        transition={{ duration: 1.5, delay:4 , ease: "easeInOut"}}
             >
                 {quote}
             </motion.div>
             <div className={'github_div'}>
                 <button className={'github_button'} onClick={()=>{window.open("https://github.com/darth-sagar?tab=overview&from=2025-06-01&to=2025-06-10","__blank")}} ><FaGithub /></button>
             </div>
+            <motion.div className={'todo_div'}
+                        initial={{ opacity: 0 , y:100}}
+                        animate={{opacity: 1 ,y:0 }}
+                        transition={{ duration: 1.5, delay:4 , ease: "easeInOut"}}
+            >
+                <button onClick={handletodokey}>Todo List</button>
+                {todo?<Todo/>:""}
+            </motion.div>
+
         </div>
     );
 }

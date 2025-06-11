@@ -105,8 +105,6 @@
     width: 100vw;
     position: absolute;
     bottom: 30px;
-
-
 }
 .github_button{
     width: 2rem;
@@ -119,5 +117,24 @@
     border-radius: 2rem;
     color: white;
     scale: 1.2;
-
+}
+.todo_div{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 15rem;
+    text-align: end;
+    margin-right: 30px;
+}
+.todo_div button{
+    color: white;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 1rem;
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 10px;
+    margin-top: 15px;
 }
