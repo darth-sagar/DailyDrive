@@ -14,3 +14,11 @@
     font-size: 20px;
     padding-left: 5px;
 }
+.tod_div{
+    position: absolute;
+    top: 80px;
+    right: 30px;
+    width: 19rem;
+    text-align: end;
+    margin-right: 30px;
+}

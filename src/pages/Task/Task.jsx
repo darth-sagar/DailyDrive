@@ -8,16 +8,16 @@ import { motion } from 'framer-motion';
 import todo from '../../Components/Todo/Todo';
 import Todo from '../../Components/Todo/Todo';
 import {click} from '@testing-library/user-event/dist/click';
+import { MdDeleteOutline } from "react-icons/md";
 
 const index = quotes[Math.floor(Math.random() * quotes.length)];
 const quote = index.quote;
 
 const Task = () => {
 
-    const [todo, settodo]=useState(false)
+    const [istodoopen, setistodoopen]=useState(false)
     const [ischeck, setischeck] = useState(false)
-    const {time,message,task, BrowserDispatch} = useBrowser();
-    const {name} = useBrowser();
+    const {time,message,task,name, BrowserDispatch} = useBrowser();
 
     useEffect(()=>{
         const task=localStorage.getItem("task");
@@ -79,7 +79,7 @@ const Task = () => {
     }
 
     const handletodokey=()=>{
-        settodo(prev => !prev)
+        setistodoopen(prev => !prev)
     }
     return (
         <div className={"main_div"}>
@@ -130,7 +130,7 @@ const Task = () => {
                             {task}
                         </label>
                     </div>
-                        <button className={'button'} onClick={removebutton}>X</button>
+                        <button className={'button'} onClick={removebutton}><MdDeleteOutline /></button>
                 </div>
             </motion.div>:
                 <motion.div className={'task_div'}
@@ -160,9 +160,8 @@ const Task = () => {
                         transition={{ duration: 1.5, delay:4 , ease: "easeInOut"}}
             >
                 <button onClick={handletodokey}>Todo List</button>
-                {todo?<Todo/>:""}
             </motion.div>
-
+            {istodoopen?<Todo/>:""}
         </div>
     );
 }

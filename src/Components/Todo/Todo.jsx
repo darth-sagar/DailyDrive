@@ -3,10 +3,11 @@ import './Todo.css'
 import {motion} from 'framer-motion';
 import Todolist from '../Todolist/Todolist';
 import {v4 as uuid} from 'uuid'
+
 const Todo = () => {
 
-    const [todo, setTodo]=useState('')
-    const [todoList , setTodoList]=useState([])
+    const [todo, setTodo]=useState('');
+    const [todoList , setTodoList]=useState([]);
 
     const handleChanges=(event)=>{
         setTodo(event.target.value)
@@ -21,9 +22,8 @@ const Todo = () => {
             event.target.value="";
         }
     }
-
     return (
-        <div>
+        <div className={"tod_div"}>
             <motion.div
                 initial={{opacity: 0}}
                 animate={{opacity: 1}}
@@ -31,10 +31,13 @@ const Todo = () => {
             >
                 <h1 className={"heading"}></h1>
                 <form onSubmit={ (e)=>{e.preventDefault()}}>
-                    <input className={"input"} placeholder="Add to-do" onKeyPress={handleSubmit} onChange={handleChanges} type="text"/>
+                    <input className={"input"} placeholder="Add Task's" onKeyPress={handleSubmit} onChange={handleChanges} type="text"/>
                 </form>
             </motion.div>
-            {/*<Todolist />*/}
+            {todoList && todoList.map(({todo, isCompleted,_id })=>{
+                return(
+                    <Todolist todo={todo} isCompleted={isCompleted} _id={_id}/>
+                )}) }
         </div>
     )
 }

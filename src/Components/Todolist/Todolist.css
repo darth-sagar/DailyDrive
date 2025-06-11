@@ -1,0 +1,31 @@
+.todolist_div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+.input_text{
+    font-size: 20px;
+    color: white;
+    padding-right: 5px;
+    margin-top: 0.8rem;
+    overflow-x: hidden;
+    max-width: 100%;
+    white-space: nowrap;
+}
+.delete_button{
+    border: none;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    margin-top: 0.8rem;
+}
+.checkbox_input{
+    margin-right: 10px;
+    font-size: 40px;
+}
+.strikethrough{
+    text-decoration: line-through;
+}
