@@ -88,7 +88,4 @@ browser-extension/
 ## Contributing
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-## Acknowledgements
-- [React](https://reactjs.org/)
-- [Framer Motion](https://www.framer.com/motion/)
-- [React Icons](https://react-icons.github.io/react-icons/)
+
