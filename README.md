@@ -85,7 +85,4 @@ browser-extension/
 └── package.json        # Project dependencies and scripts
 ```
 
-## Contributing
-Contributions are welcome! Please feel free to submit a Pull Request.
-
 
